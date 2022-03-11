@@ -1,7 +1,7 @@
 
 # for registry development
 ltmv:
-  host: db
+  host: db-ltmv
   name: LtmvReportDataStaging
   user: root
   pass: root
