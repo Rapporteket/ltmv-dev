@@ -1,0 +1,9 @@
+
+# for registry development
+ltmv:
+  host: db
+  name: LtmvReportDataStaging
+  user: root
+  pass: root
+  disp: ForLtmvDevOnly
+
