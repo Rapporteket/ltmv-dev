@@ -13,6 +13,7 @@ RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml
     && echo "DB_HOST=${DB_HOST}" >> /home/shiny/.Renviron \
     && R -e "install.packages(c('covr', \
                                 'dplyr', \
+                                'ggplot2', \
                                 'lintr', \
                                 'magrittr', \
                                 'rlang', \
