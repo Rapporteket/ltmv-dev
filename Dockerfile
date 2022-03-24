@@ -1,9 +1,8 @@
-FROM rapporteket/dev:main
+FROM rapporteket/dev:nightly
 
 LABEL maintainer "Are Edvardsen <are.edvardsen@helse-nord.no>"
 
-ARG DB_HOST=db-ltmv
-ENV DB_HOST=${DB_HOST}
+ENV DB_HOST=db-ltmv
 
 # add registry dev config and R pkg dependencies
 COPY --chown=rstudio:rstudio db.yml /home/rstudio/rap_config/
