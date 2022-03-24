@@ -2,7 +2,7 @@
 # for registry development
 ltmv:
   host: db-ltmv
-  name: LtmvReportDataStaging
+  name: LangmekDataStaging
   user: root
   pass: root
   disp: ForLtmvDevOnly
