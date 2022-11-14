@@ -26,9 +26,14 @@ jobs:
           dockerfile: "Dockerfile"
       - name: Prepare tags
         id: docker_meta
-        uses: crazy-max/ghaction-docker-meta@v4.1.1
+        uses: docker/metadata-action@v3.6.2
         with:
-          images: rapporteket/ltmv-dev
+          images: ${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=schedule,pattern=weekly
+            type=semver,pattern={{major}}.{{minor}}.{{patch}}
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Login to DockerHub
