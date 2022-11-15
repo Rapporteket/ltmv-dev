@@ -9,7 +9,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 21 * * 1' # run Sundays at 21
+    - cron: '0 21 * * 2' # run Sundays at 21
 
 jobs:
   push_to_registries:
