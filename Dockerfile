@@ -1,4 +1,4 @@
-FROM rapporteket/dev:nightly
+FROM rapporteket/dev:main
 
 LABEL maintainer "Are Edvardsen <are.edvardsen@helse-nord.no>"
 
